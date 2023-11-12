@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Uts</title>
+    <style>
+        div {
+            text-align: center;
+        }
+    </style>
+    <link rel="stylesheet" href="nav.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Data Karyawan </a></li>
+            <li><a href="#">Master Data</a></li>
+            <li><a href="#">Tambah Data</a></li>
+        </ul>
+    </nav>
+    <h2>Form Entry Data Pegawai</h2>
+    <div>
+        <form>
+            <label id="nik">NIK :</label>
+            <input type="text" id="nik" name="nik">
+            <br><br>
+            <label id="nama">Name :</label>
+            <input type="text" id="nama" name="nama">
+            <br><br>
+            <label id="tempat lahir">Tempat Lahir :</label>
+            <input type="text" id="tempat lahir" name="tempat lahir">
+            <br><br>
+            <label id="tanggal lahir">Tanggal Lahir :</label>
+            <input type="date" id="tanggal lahir" name="tanggal ahir">
+            <br><br>
+            <label id="alamat">Alamat :</label>
+            <textarea id="alamat" name="alamat" rowa="80"></textarea>
+            <br><br>
+            <label id="no telepone">No telepone:</label>
+            <input type="number" id="no telepone" name="no telepone">
+            <br><br>
+            <label id="jabatan">Jabatan:</label>
+            <select id="jabatan" name="jabatan">
+                <option value="none">-pilih jabatan</option>
+                <option value="manager">Manager</option>
+                <option value="staf">Staf</option>
+                <option value="supervisor">Supervisor</option>
+            </select>
+            <br><br>
+            <label id="status">Status</label>
+            <select id="status" name="status">
+                <option value="none">-pilih status</option>
+                <option value="aktif">aktif</option>
+                <option value="tidak">tidak</option>
+            </select>
+            <br><br>
+            <input type="submit" value="simpan">
+            <input type="reset" value="batal">
+        </form>
+    </div>
+</body>
+
+</html>
