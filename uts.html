@@ -6,9 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Latihan Uts</title>
     <style>
-        div {
-            text-align: center;
+        table{
+            display: flex;
+            justify-content: center;
+            text-decoration: none;
+            list-style: none;
         }
+
+        th {
+            text-align: right;
+            padding: 10px;
+        }
+
+        .right{
+            text-align: left;
+        }
+
+        .submit{
+            text-align: center;
+            display: flex;
+            justify-content: center;
+        }
+
     </style>
     <link rel="stylesheet" href="nav.css">
 </head>
@@ -24,41 +43,87 @@
     <h2>Form Entry Data Pegawai</h2>
     <div>
         <form>
-            <label id="nik">NIK :</label>
-            <input type="text" id="nik" name="nik">
-            <br><br>
-            <label id="nama">Name :</label>
-            <input type="text" id="nama" name="nama">
-            <br><br>
-            <label id="tempat lahir">Tempat Lahir :</label>
-            <input type="text" id="tempat lahir" name="tempat lahir">
-            <br><br>
-            <label id="tanggal lahir">Tanggal Lahir :</label>
-            <input type="date" id="tanggal lahir" name="tanggal ahir">
-            <br><br>
-            <label id="alamat">Alamat :</label>
-            <textarea id="alamat" name="alamat" rowa="80"></textarea>
-            <br><br>
-            <label id="no telepone">No telepone:</label>
-            <input type="number" id="no telepone" name="no telepone">
-            <br><br>
-            <label id="jabatan">Jabatan:</label>
-            <select id="jabatan" name="jabatan">
-                <option value="none">-pilih jabatan</option>
-                <option value="manager">Manager</option>
-                <option value="staf">Staf</option>
-                <option value="supervisor">Supervisor</option>
-            </select>
-            <br><br>
-            <label id="status">Status</label>
-            <select id="status" name="status">
-                <option value="none">-pilih status</option>
-                <option value="aktif">aktif</option>
-                <option value="tidak">tidak</option>
-            </select>
-            <br><br>
-            <input type="submit" value="simpan">
-            <input type="reset" value="batal">
+            <table>
+                <tr>
+                    <th>
+                        <label id="nik">NIK :</label>
+                    </th>
+                    <th class="right">
+                        <input type="text" id="nik" name="nik">
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <label id="nama">Name :</label>
+                    </th>
+                    <th class="right">
+                        <input type="text" id="nama" name="nama">
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <label id="tempat lahir">Tempat Lahir :</label>
+                    </th>
+                    <th class="right">
+                        <input type="text" id="tempat lahir" name="tempat lahir">
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <label id="tanggal lahir">Tanggal Lahir :</label>
+                    </th>
+                    <th class="right">
+                        <input type="date" id="tanggal lahir" name="tanggal ahir">
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <label id="alamat">Alamat :</label>
+                    </th>
+                    <th class="right">
+                        <textarea id="alamat" name="alamat" rowa="80"></textarea>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <label id="no telepone">No telepone:</label>
+                    </th>
+                    <th class="right">
+                        <input type="number" id="no telepone" name="no telepone">
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <label id="jabatan">Jabatan:</label>
+                    </th>
+                    <th class="right">
+                        <select id="jabatan" name="jabatan">
+                            <option value="none">-pilih jabatan</option>
+                            <option value="manager">Manager</option>
+                            <option value="staf">Staf</option>
+                            <option value="supervisor">Supervisor</option>
+                        </select>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <label id="status">Status</label>
+                    </th>
+                    <th class="right">
+                        <select id="status" name="status">
+                            <option value="none">-pilih status</option>
+                            <option value="aktif">aktif</option>
+                            <option value="tidak">tidak</option>
+                        </select>
+                    </th>
+                </tr>
+                <tr class="submit">
+                    <th>
+                        <input type="submit" value="simpan">
+                        <input type="reset" value="batal">
+                    </th>
+                </tr>
+            </table>
         </form>
     </div>
 </body>
